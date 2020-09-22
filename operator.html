@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+ <head>
+<meta charset="UTF-8">
+<meta language="tr">
+<meta lang="tr">
+
+<title>arithmetic operators</title> </head>
+<body>
+<h1>Wild Birthday Game</h1> <p>
+<ul>
+<li>Enter the number 7</li>
+<li>Multiply by the month of your birth</li> <li>Subtract 1</li>
+<li>Multiply by 13</li>
+<li>Add the day of your birth</li>
+<li>Add 3</li>
+<li>Multiply by 11</li>
+<li>Subtract the month of your birth</li> <li>Subtract the day of your birth</li> <li>Divide by 10</li>
+<li>Add 11</li>
+<li>Divide by 100</li>
+   </ul>
+   </p>
+   <p>
+     <script>
+var numberSeven = Number(prompt('Enter the number 7'));
+var birthMonth = Number(prompt('Enter your birth month'));
+var calculation = numberSeven * birthMonth; calculation = calculation - 1;
+calculation = calculation * 13;
+var birthDay = Number(prompt('Enter the day of your birth'));
+calculation = calculation + birthDay;
+calculation = calculation + 3; 
+	   calculation = calculation * 11 
+	   calculation = calculation - birthMonth; 
+	   calculation = calculation - birthDay; 
+	   calculation = calculation / 10; 
+	   calculation = calculation + 11; 
+	   calculation = calculation / 100;
+document.write("Your birthday is " + calculation);
+	   
+	   /*
+	   *DELETE OPERATOR 
+	   *
+	   */
+	   var animals = ["dog","cat","bird","octopus"]; 
+	   console.log (animals[3]); // returns "octopus" 
+	   delete animals[3];
+	   console.log (animals[3]); // returns "undefined"
+	   
+	   /*
+	   *IN OPERATOR 
+	   *
+	   */
+	   var ayvanlar = ["dog","cat","bird","octopus"]; 
+	   if (3 in ayvanlar) {
+console.log ("it's in there"); 
+	   }
+	   
+	   	   /*
+	   *INSTANCEOF / TYPEOF /   OPERATOR 
+	   *
+	   */
+	   var myString = new String();
+	   if (myString instanceof String) {
+		   	console.log("yup, it's a string!");
+	   }
+	   var businessName = "Harry's Watch Repair";
+	   console.log(typeof businessName); // returns "string"
+	   
+	   
+	   /*
+	   * IF / ELSE
+	   *
+	   */
+	   var age = 19; 
+		 if (age < 21){
+document.write ("You are under the legal drinking age in the U.S.");
+} else {
+document.write ("What'll it be?");
+}
+var time = 11;	
+		if (time < 12) {
+			document.write("Günaydın!!!");
+		} else if (time < 17) {
+			document.write("İyi öğlenler!");
+		} else if (time < 20) {
+			document.write("İyi akşamlar");
+		}else {
+			document.write("İyi geceler :)))");
+		}
+
+	   /*
+	   * IF ELSE KISAYOL???
+	   *
+	   */
+		 var whatToSay = (time < 12 ? 
+						 "Good Morning":
+						 "Hello");
+		 
+		 document.write(whatToSay);
+		 
+		 
+		 
+		 // Diger Türlü
+		 time < 12 && document.write("Günaydınlarrrrr...");
+		 
+	   /*
+	   *
+	   *SWITCH OPERATOR
+	   *
+	   switch (expression) { 
+	   		case value1:
+	   		// Statements
+			break;
+  			case value2:
+  			// Statements
+  			break;
+  			case value3:
+  			// Statements
+  			break;
+  			default:
+  			// Statements
+			break; }
+	   
+	   
+	   */
+		 
+		 var languagePreference = "Spanish"; 
+		 switch (languagePreference){
+			 	case "English": console.log("Hello!"); 
+				 break;
+			 	case "Spanish": console.log("Hola!"); 
+				 break;
+			 	case "German": console.log("Guten Tag!"); 
+				 break;
+			 	case "French": console.log("Bon Jour!"); 
+				 break;
+			 	default:
+				 console.log("I'm sorry." + "I'cant speak" + languagePreference + "!");
+		 }
+	   /*
+	   *
+	   *
+	   */
+	   /*
+	   *
+	   *
+	   */
+	   /*
+	   *
+	   *
+	   */
+	   /*
+	   *
+	   *
+	   */
+	   /*
+	   *
+	   *
+	   */
+	   /*
+	   *
+	   *
+	   */
+	   /*
+	   *
+	   *
+	   */
+	   /*
+	   *
+	   *
+	   */
+	   /*
+	   *
+	   *
+	   */
+	   /*
+	   *
+	   *
+	   */
+	   /*
+	   *
+	   *
+	   */
+
+	   
+	   
+	   
+	   </script>
+     <a href="javascript:void(0);">This is a link, but it won't do anything</a>
+     
+   </p>
+   <table width="500" border="0">
+     <tbody>
+       <tr>
+         <th scope="col">Kısayol</th>
+         <th scope="col">Uzunu</th>
+       </tr>
+       <tr>
+         <td>x = y</td>
+         <td>x = y</td>
+       </tr>
+       <tr>
+         <td>x += y</td>
+         <td>x = x + y</td>
+       </tr>
+       <tr>
+         <td>x -= y</td>
+         <td>x = x - y</td>
+       </tr>
+       <tr>
+         <td>x *= y</td>
+         <td>x = x * y</td>
+       </tr>
+       <tr>
+         <td>x /= y</td>
+         <td>x = x / y</td>
+       </tr>
+       <tr>
+         <td>x %= y</td>
+         <td>x = x % y</td>
+       </tr>
+       <tr>
+         <td>x &lt;&lt;= y</td>
+         <td>x = x &lt;&lt; y</td>
+       </tr>
+       <tr>
+         <td>x &gt;&gt;= y</td>
+         <td>x = x &gt;&gt; y</td>
+       </tr>
+       <tr>
+         <td>x &gt;&gt;&gt;= y</td>
+         <td>x = x &gt;&gt;&gt; y</td>
+       </tr>
+       <tr>
+         <td>x =&amp; y</td>
+         <td>x = x &amp; y</td>
+       </tr>
+       <tr>
+         <td>x ^= y</td>
+         <td>x = x ^ y</td>
+       </tr>
+       <tr>
+         <td>x |= y</td>
+         <td>x = x | y</td>
+       </tr>
+     </tbody>
+   </table>
+   <p>&nbsp;</p>
+</body>
+</html>
